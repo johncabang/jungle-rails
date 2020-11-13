@@ -10,6 +10,10 @@ Rails.application.routes.draw do
     post   :remove_item
   end
 
+  resource :about, only: [:show] do
+    root to: 'about#show'
+  end
+
   resources :orders, only: [:create, :show]
 
   namespace :admin do
