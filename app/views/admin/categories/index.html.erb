@@ -1,28 +1,32 @@
-<header class="page-header">
-  <h1>Admin &raquo; All Categories</h1>
-</header>
+<section class="admin-categories-index">
 
-<div class="well">
-  <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
-</div>
+  <header class="page-header">
+    <h1>Admin &raquo; All Categories</h1>
+  </header>
 
-<div class="panel panel-default products">
+  <div class="well">
+    <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
+  </div>
 
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Category</th>
-      </tr>
-    </thead>
-    <tbody>
-      <%= @category.each do |category| %>
+  <div class="panel panel-default products">
+
+    <table class="table table-bordered">
+      <thead>
         <tr>
-          <td>
-            <%= category.name %>
-          </td>
+          <th>Category</th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <%= @category.each do |category| %>
+          <tr>
+            <td>
+              <%= category.name %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
-</div>
+  </div>
+
+</section>
