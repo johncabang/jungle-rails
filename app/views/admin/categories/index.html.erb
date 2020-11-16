@@ -17,13 +17,8 @@
         </tr>
       </thead>
       <tbody>
-        <%= @category.each do |category| %>
-          <tr>
-            <td>
-              <%= category.name %>
-            </td>
-          </tr>
-        <% end %>
+        <%= render @categories %>
+       
       </tbody>
     </table>
 
