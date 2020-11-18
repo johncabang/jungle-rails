@@ -1,6 +1,12 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2.
+
+## Features
+
+- Users can register/login/logout
+- Users can add/remove/checkout products
+- Admin can add/edit/delete products and categories
 
 ## Setup
 
@@ -24,6 +30,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 - PostgreSQL 9.x
 - Stripe
+
+## Testing
+
+- RSpec
+- Capybara/Poltergeist
 
 ## Demo
 
